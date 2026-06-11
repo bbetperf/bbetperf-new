@@ -28,8 +28,8 @@
 
       <div class="hero">
         <div class="hero-titles">
-          <h1 class="hero-name">Kodomi.</h1>
-          <p class="hero-location">Project. Dec 24.</p>
+          <h1 class="hero-name">How I Built Kodomi, a Collaborative No-Code Platform for Designers.</h1>
+          <p class="hero-location">Kodomi. Dec 24.</p>
         </div>
         <p class="hero-tagline">Built a versatile no-code tool empowering designers to rapidly prototype and share UI components and full websites.</p>
       </div>
@@ -37,10 +37,9 @@
       <div class="divider"><div class="divider-line"></div></div>
 
       <div class="section">
-        <h2 class="section-title">Overview.</h2>
         <div class="compact-list">
           <div class="compact-item">
-            <p class="compact-desc">The gap between designing a component and sharing a working version of it is still measured in days. Kodomi was designed to close that gap — a tool where a designer selects a component, sets its properties, and publishes a live, interactive version in minutes without touching code.</p>
+            <p class="compact-desc">Kodomi emerged from my ambition to enable designers and developers to effortlessly collaborate, build, and publish web projects using powerful no-code features.</p>
           </div>
         </div>
       </div>
@@ -48,32 +47,402 @@
       <div class="separator"></div>
 
       <div class="section">
-        <h2 class="section-title">Details.</h2>
+        <h2 class="section-title">Problem.</h2>
         <div class="compact-list">
           <div class="compact-item">
-            <div class="compact-header">
-              <span class="compact-name">Component Editor.</span>
-              <div class="compact-line"></div>
-              <span class="compact-date">Visual</span>
-            </div>
-            <p class="compact-desc">A property panel mirrors Figma's variants interface — familiar enough that any designer can use it immediately without a learning curve.</p>
+            <p class="compact-desc">Sharing interface ideas often felt harder than it should. Design tools were great for mockups but not for building live, modular sites. Hand off took too long and moving assets between projects was messy. I wanted a way to think in components and publish without leaving the flow.</p>
           </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Goal.</h2>
+        <div class="compact-list">
           <div class="compact-item">
-            <div class="compact-header">
-              <span class="compact-name">Publishing.</span>
-              <div class="compact-line"></div>
-              <span class="compact-date">One tap</span>
-            </div>
-            <p class="compact-desc">A shareable link generates instantly. Recipients interact with the live component in their browser — no install, no Figma account required.</p>
+            <p class="compact-desc">Create a no code platform where designers and developers can build real sites, plug in UI libraries from GitHub, and publish with a system that stays consistent across pages. Make the tool friendly for individuals and small teams, not just specialists.</p>
           </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Research and Benchmarking.</h2>
+        <div class="compact-list">
           <div class="compact-item">
-            <div class="compact-header">
-              <span class="compact-name">Pages.</span>
-              <div class="compact-line"></div>
-              <span class="compact-date">Full sites</span>
-            </div>
-            <p class="compact-desc">Multiple components can be assembled into a full page or site — bridging the gap between component demo and real product preview.</p>
+            <p class="compact-desc">I mapped the space across Webflow, Framer, Bubble, Wix, and a niche builder called TapTop. Each had strengths, but most lacked simple component libraries that travel across projects, version history, or a clear sitemap. These gaps shaped what Kodomi had to do from day one.</p>
           </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/1f02956.png" alt="Competitive benchmarking">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Competitive benchmarking.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Primary Insight.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">Speed comes from modularity. If tokens, components, and libraries are first class, people design faster and ship with fewer errors. That guided everything from the asset model to how pages inherit style.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Key Concepts.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">Integrate UI libraries through GitHub and let users buy full kits or single elements in a marketplace. Keep a token based design system under the hood so style stays consistent. Add an AI Designer that can generate a page or refine an element from a prompt.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Key Screens.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">Assets Editor for full project control. AI Designer for generation and refinement. Sitemap to plan and reuse templates. Library and Marketplace to mix GitHub based kits and individual elements. These screens formed the shortest path from idea to a working site.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/e1601aa.png" alt="Assets editor">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Assets editor.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/9ae3a01.png" alt="Global action bar">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Global action bar.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/02577ff.png" alt="Element property inspector">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Element property inspector.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Personas.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">I focused on three users. A small business owner who needs a site she can update herself. A freelance designer who wants to reuse high quality UI and deliver fast. A startup founder who needs customization and quick launch without hiring a large team. Their needs validated the library model, the sitemap, and the AI helper.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/8f7b232.png" alt="Personas">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Personas.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">AI Designer.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">The AI Designer turns intent into structure. Type what you need and it assembles a layout with the right components and styles. It can also tune an existing screen and suggest improvements based on trends and your connected libraries.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/43f1d96.png" alt="AI generation interface">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">AI generation interface.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/88f1dff.png" alt="AI generation prompt">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">AI generation prompt.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Design System.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">Everything runs on tokens and components. Color, type, spacing, and motion inherit from tokens so changes cascade safely. I built both light and dark themes early to keep parity as screens grew. The first version covered 22 screens and set the pattern for more.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/15b0e9c.png" alt="Component sizing options">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Component sizing options.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/718ac6f.png" alt="Typography settings panel">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Typography settings panel.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">My Role.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">I initiated the concept, led product design, created the sitemap and flows, built the token system, and partnered with an art director and a developer to prototype and test. I also shaped the strategy toward an investor ready direction.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Workflow.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">Competitive analysis fed into sketches, then wireframes, then an interactive prototype. I kept a tight loop between asset structure, tokens, and publishing so each decision improved speed and clarity rather than adding settings.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Assets Editor.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">The Assets Editor became the control room. It shows every element, section, and form in one place and lets you update, remix, or create components without hunting across pages. It also pulls in new libraries so projects evolve without a rebuild.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/b61c1e3.png" alt="Media asset manager">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Media asset manager.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/38e62f9.png" alt="Drag-and-drop element placement">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Drag-and-drop element placement.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="project-image-wrap">
+        <div class="project-image-frame">
+          <div class="project-image-bg"></div>
+          <img class="project-img" src="images/kodomi/4369fe9.png" alt="Create or generate project">
+        </div>
+        <div class="project-image-details">
+          <p class="project-date">Create or generate project.</p>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">What's Next.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">Expand the marketplace, deepen library integration, and add multiuser collaboration with version control and performance work to meet a growing user base.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">Takeaway.</h2>
+        <div class="compact-list">
+          <div class="compact-item">
+            <p class="compact-desc">Kodomi taught me that good tools feel quiet. When components, tokens, and libraries do the heavy lifting, designers stay in flow and teams move faster from sketch to site.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"><div class="divider-line"></div></div>
+
+      <div class="section">
+        <h2 class="section-title">More in Projects.</h2>
+        <div class="compact-list">
+          <a href="car-cockpit.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Car Digital Cockpit.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Jan 25.</span>
+            </div>
+            <p class="compact-desc">Developed intuitive digital cockpits integrating real-time data visualization, driver-centric design, and responsive interfaces.</p>
+          </a>
+          <a href="car-widgets.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Car Control Widgets.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Oct 24.</span>
+            </div>
+            <p class="compact-desc">Crafted native-style widgets for car controls, bringing Apple's clarity and consistency into everyday driving.</p>
+          </a>
+          <a href="noque.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Noque.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Mar 24.</span>
+            </div>
+            <p class="compact-desc">Engineered an innovative mobile app simplifying restaurant interactions through streamlined ordering and efficient pickup.</p>
+          </a>
+          <a href="musyka.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Musyka.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Nov 24.</span>
+            </div>
+            <p class="compact-desc">Designed a vibrant digital music experience tailored specifically to the dynamic preferences of new generation.</p>
+          </a>
+          <a href="mesoki.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Mesoki.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Nov 23.</span>
+            </div>
+            <p class="compact-desc">Established a minimalist stationery brand that seamlessly blends functional design and engaging digital storytelling.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">More in Nuggets.</h2>
+        <div class="compact-list">
+          <a href="fui.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">FUI.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Dec 25.</span>
+            </div>
+            <p class="compact-desc">An exploration of interface aesthetics where clarity, composition, and signal hierarchy take priority over practical constraints.</p>
+          </a>
+          <a href="component-shortcut.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Component Shortcut.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Sep 25.</span>
+            </div>
+            <p class="compact-desc">Added a custom shortcut feature for design components to reduce friction and avoid digging through the library every time.</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="section">
+        <h2 class="section-title">More in Readings.</h2>
+        <div class="compact-list">
+          <a href="word-choice-is-design.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Word Choice Is Design.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Mar 26.</span>
+            </div>
+            <p class="compact-desc">A reflection on how Apple Maps uses voice intonation to manage your emotional state while driving, and why Google Maps and Waze don't.</p>
+          </a>
+          <a href="pebble-2-duo.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Pebble 2 Duo.</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Nov 25.</span>
+            </div>
+            <p class="compact-desc">A reflection on finally owning the Pebble 2 Duo, a tiny comeback story about detail, nostalgia, and honest design.</p>
+          </a>
+          <a href="hello-world.html" class="compact-item compact-link">
+            <div class="compact-header">
+              <span class="compact-name">Hello, World!</span>
+              <div class="compact-line"></div>
+              <span class="compact-date">Sep 25.</span>
+            </div>
+            <p class="compact-desc">A short manifesto for what Readings is, how I use it, and how to read it.</p>
+          </a>
         </div>
       </div>
 
