@@ -1,0 +1,390 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Geist Mono', monospace;
+  background: white;
+  color: #0d0d0d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Header ── */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: white;
+  border-bottom: 1px solid rgba(13, 13, 13, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+  z-index: 100;
+}
+
+.header-nav {
+  display: flex;
+  gap: 12px;
+  max-width: 640px;
+  width: 100%;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  background: rgba(13, 13, 13, 0.04);
+  border: 1px solid rgba(13, 13, 13, 0.12);
+  border-radius: 8px;
+  font-family: 'Geist Mono', monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #0d0d0d;
+  text-decoration: none;
+  cursor: pointer;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  transition: opacity 0.15s ease;
+}
+
+.btn:hover {
+  opacity: 0.6;
+}
+
+/* ── Page layout ── */
+.page {
+  padding-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 640px;
+  padding: 0 24px;
+}
+
+/* ── Separator (spacer, no line) ── */
+.separator {
+  height: 128px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* ── Divider (spacer + horizontal line) ── */
+.divider {
+  padding: 128px 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.divider-line {
+  height: 1px;
+  width: 100%;
+  background: rgba(13, 13, 13, 0.12);
+}
+
+/* ── Hero ── */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  word-break: break-word;
+}
+
+.hero-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-name {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #0d0d0d;
+}
+
+.hero-location {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(13, 13, 13, 0.4);
+}
+
+.hero-tagline {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(13, 13, 13, 0.64);
+}
+
+/* ── Project Cover ── */
+.project-cover {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  width: 100%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  word-break: break-word;
+  width: 100%;
+}
+
+.project-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #0d0d0d;
+}
+
+.project-label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(13, 13, 13, 0.4);
+}
+
+.project-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(13, 13, 13, 0.64);
+}
+
+.project-image-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.project-image-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(13, 13, 13, 0.12);
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.project-image-bg {
+  position: absolute;
+  inset: -1px;
+  background: rgba(13, 13, 13, 0.04);
+  z-index: 1;
+}
+
+.project-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: 2;
+  display: block;
+}
+
+.project-image-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  width: 100%;
+}
+
+.project-date {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(13, 13, 13, 0.4);
+  text-align: center;
+}
+
+/* ── Sections (More in …) ── */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #0d0d0d;
+  word-break: break-word;
+}
+
+.compact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.compact-item {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.compact-header {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.compact-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0d0d0d;
+  white-space: nowrap;
+}
+
+.compact-line {
+  flex: 1 0 1px;
+  height: 1px;
+  background: rgba(13, 13, 13, 0.12);
+}
+
+.compact-date {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgba(13, 13, 13, 0.4);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.compact-desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(13, 13, 13, 0.64);
+  word-break: break-word;
+}
+
+/* ── Copyright ── */
+.copyright {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #0d0d0d;
+}
+
+/* ── Clickable project / compact links ── */
+.project-link,
+.compact-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.project-link:hover .project-title,
+.project-link:hover .project-label,
+.compact-link:hover .compact-name {
+  opacity: 0.6;
+}
+
+.project-link:hover .project-image-frame,
+.compact-link:hover {
+  opacity: 0.85;
+}
+
+/* ── Back link (inner pages) ── */
+.back-link {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(13, 13, 13, 0.4);
+  text-decoration: none;
+  margin-bottom: 64px;
+  transition: color 0.15s ease;
+}
+
+.back-link:hover {
+  color: #0d0d0d;
+}
+
+/* ── Placeholder (unpublished content) ── */
+.placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(13, 13, 13, 0.24);
+}
+
+/* ── Mobile ── */
+@media (max-width: 640px) {
+  .separator {
+    height: 64px;
+  }
+
+  .divider {
+    padding: 64px 0;
+  }
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .site-header {
+    padding: 0 20px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 3px 6px;
+  }
+
+  .hero-name {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .project-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .section-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
